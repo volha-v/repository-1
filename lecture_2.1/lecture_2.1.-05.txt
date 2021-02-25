@@ -1,0 +1,9 @@
+Integer count = 3;
+Integer sum = 0;
+
+while (count > 0) {
+sum = sum + count;
+
+count--;
+}
+System.debug('Cumma vsekh chisel ot 1 do vvedennogo chisla: ' + sum);

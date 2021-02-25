@@ -1,0 +1,3 @@
+for(Integer count  = 1; count  <= 10; count ++){
+ System.debug (count + ' * 3 = '+ count*3);
+}

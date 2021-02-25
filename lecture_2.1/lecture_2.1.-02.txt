@@ -1,0 +1,5 @@
+Integer count = 1;
+while (count <= 5) {
+System.debug(count);
+count++;
+}

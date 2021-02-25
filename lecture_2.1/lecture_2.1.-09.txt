@@ -1,0 +1,5 @@
+String str = 'Apex is a strongly typed, object-oriented programming language.';
+String[] result = str.split(' ');
+
+System.debug ('Pervoe slovo: ' + result [0]);
+System.debug ('Poslednee slovo: ' + result [result.size() -1]);

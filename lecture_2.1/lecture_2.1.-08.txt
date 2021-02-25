@@ -1,0 +1,19 @@
+List<Integer> arrayAll = new List<Integer>{1, 30, 15, 40, 60, 2, 5, 45, 96, 98};
+Integer i = 0;
+List<Integer> arrayCh = new List<Integer> ();
+List<Integer> arrayNeCh = new List<Integer> ();
+
+while (i < arrayAll.size()) {    
+  if (math.mod (arrayAll[i], 2) ==0) {  
+      arrayCh.add(arrayAll[i]);
+
+    }else {  
+
+       arrayNeCh.add(arrayAll[i]);
+         }  
+  i++;
+
+}  
+
+System.debug('Ñhetnyj chisla: ' + arrayCh);
+System.debug('Ne chetnyj chisla: ' + arrayNeCh);

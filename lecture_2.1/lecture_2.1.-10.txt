@@ -1,0 +1,15 @@
+String str = 'Apex is a strongly typed, object-oriented programming language.';
+String[] result = str.split(' ');
+Integer i = 0;
+
+List<String> arrayCh = new List<String> ();
+
+while (i < result.size()) {    
+ if (i == 0 || math.mod (i, 2) == 0) {  
+
+     arrayCh.add(result[i]);
+   }
+ i++;
+}  
+
+System.debug('Clova, stoyashchie na nechetnyh poziciyah v predlozhenii: ' + arrayCh);
