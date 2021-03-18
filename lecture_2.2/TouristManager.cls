@@ -1,18 +1,21 @@
 public class TouristManager {
-      
-  public static List<Tourist__c> getName (String n) {
+    
+ public static List<Tourist__c> getName (String name) {
   List<Tourist__c> touristName = [SELECT Age__c, Name 
                                 	FROM Tourist__c 
-                                	WHERE Name =: n];
-  return touristName;  
-  }
+                                	WHERE Name =:name ];
+      System.debug (touristName);
+      return touristName;  
+   }
     
-  public static List<Tourist__c> getWithAge (Integer a) {
-	List<Tourist__c> tourisWithAge = [SELECT Age__c,Name 
+    
+  public static List<Tourist__c> getTouristsByAge (Integer age) {
+	List<Tourist__c> touristsByAge = [SELECT Age__c,Name 
                                     FROM Tourist__c 
-                                    WHERE Age__c =: a];
-  return tourisWithAge;  
+                                    WHERE Age__c =: age];
+  
+  return touristsByAge;  
     }  
-      
+    
     
 }
