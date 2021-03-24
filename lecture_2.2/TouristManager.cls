@@ -5,7 +5,8 @@ public static List < Tourist__c > getTouristsByName (String name) {
 		return new List < Tourist__c > ();
 		}
 	List < Tourist__c > tourist = [
-					SELECT Age__c, Name
+					SELECT Age__c, 
+					       Name
 					FROM Tourist__c
 					WHERE Name LIKE: name
         ];
@@ -17,7 +18,8 @@ public static List < Tourist__c > getByAge(Integer age) {
 		return new List < Tourist__c > ();
 		}
 	List < Tourist__c > touristsByAge = [
-						SELECT Age__c, Name
+						SELECT Age__c, 
+						       Name
 						FROM Tourist__c
 						WHERE Age__c = :age
     ];
@@ -54,7 +56,7 @@ public static List < Flight__c > getByFlight() {
 public static List < Tourist__c > getWithoutFlight() {
 		List < Tourist__c > touristsWithoutFlight = [
 								SELECT Age__c, 
-            								Name
+            							       Name
 								FROM Tourist__c
 								WHERE Id NOT IN(SELECT Tourist__c FROM Flight__c)
     ];
