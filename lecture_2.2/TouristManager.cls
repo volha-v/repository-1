@@ -1,6 +1,6 @@
 public class TouristManager {
 
-public static List < Tourist__c > getByName(String name) {
+public static List < Tourist__c > getTouristsByName (String name) {
 	if (name == null) {
 		return new List < Tourist__c > ();
 		}
