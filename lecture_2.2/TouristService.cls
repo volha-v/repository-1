@@ -1,9 +1,9 @@
 public class TouristService {
 public static void markDuplicates(List<Tourist__c> newTourists) {
 List<Tourist__c> tourist = new List<Tourist__c> ( [
-												SELECT  Email__c,
-														Last_name__c
-        										FROM Tourist__c 
+												SELECT  Email__c, 
+														Last_name__c 
+												FROM Tourist__c 
 ]
 );
     
